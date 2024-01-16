@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  background: url('/bg_image_2.png') center center fixed;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Fix the position of the image */
-  background-size: 63%; 
-  background-color: #d5e8eb;
+    background: url("/bg_image_2.png") center center fixed;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Fix the position of the image */
+    background-size: 63%;
+    background-color: #d5e8eb;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    color: black;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black;
 }
